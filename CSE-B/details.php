@@ -8,7 +8,7 @@ require_once('dbconnection.php');
 	$age= $_POST['age'];
 	$Contact= $_POST['Contact'];
 
-	$sql="INSERT INTO users (username,age,Contact) VALUES ('$username','$age','$Contact')";
+	$sql="INSERT INTO `users` (username,age,Contact) VALUES ('$username','$age','$Contact')";
 	mysqli_query($conn, $sql);
 }
 else{
