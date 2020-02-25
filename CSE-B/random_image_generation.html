@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<img src="bulbon.jpg" id='img' width="200px" height="300px">
+	<input type="button" value="change image" id="btn">
+	<script type="text/javascript">
+		function randomimage()
+		{
+			random = 1+Math.ceil(Math.random()*3);
+			return random;
+		}
+
+		document.getElementById('btn').onclick=function()
+		{
+			var image = randomimage();
+			document.getElementById('img').src=image+'.jpg';
+		}
+	</script>
+</body>
+</html>

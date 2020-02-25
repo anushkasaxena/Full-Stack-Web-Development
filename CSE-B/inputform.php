@@ -7,7 +7,6 @@ require_once("dbconnection.php");
 </head>
 <body>
 	<form action="details.php" method="post">
-		
 		Name: <input type="text" name="username" placeholder="enter username">
 		<br>
 		Age: <input type="text" name="age" placeholder="age"><br>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<title></title>
+<body>
+
+<img id="bulb" onclick="toggle()" src="bulboff.jpg" width="100" height="200">
+<p> Click on the bulb to on and off it...</p>
+<script>
+function toggle() {
+
+  img = document.getElementById('bulb');
+  if (img.src.match("bulbon")) 
+  {
+    img.src =" bulboff.jpg";
+  } 
+  else 
+  {
+    img.src = "bulbon.jpg";
+  }
+}
+</script>
+</body></html>
